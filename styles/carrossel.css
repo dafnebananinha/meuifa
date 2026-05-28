@@ -153,8 +153,8 @@
 #btn-fullscreen {
   background-color: darkred; /* Cor de fundo */
   color: white; /* Cor do texto */
-  padding: 12px 24px; /* Espaçamento interno */
-  font-size: 16px; /* Tamanho do texto */
+  padding: 1px 2px; /* Espaçamento interno */
+  font-size: 12px; /* Tamanho do texto */
   font-weight: bold; /* Espessura da fonte */
   border: none; /* Remove a borda padrão */
   border-radius: 8px; /* Arredonda os cantos */
