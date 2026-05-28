@@ -187,3 +187,29 @@
     border: none;
     border-radius: 5px;
 }
+
+
+
+
+
+
+
+
+
+
+.carrossel:fullscreen {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.carrossel__topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
