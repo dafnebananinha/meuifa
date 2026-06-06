@@ -28,7 +28,7 @@ body, html {
 
 .titulo-digitando {
     font-family: monospace;
-    font-size: 5.5vw;
+    font-size: 5vw;
     color: var(--vermelho); 
     overflow: hidden;
     white-space: nowrap;
@@ -38,7 +38,6 @@ body, html {
     margin-top: 0%;
     margin-bottom: 0%;
 }
-
 
 @keyframes typing {
     0% {
@@ -57,7 +56,7 @@ body, html {
 
 .gradient-text {
   font-family: Garamond;
-  font-size: 5vw;
+  font-size: 4vw;
   text-align: center;
   color: #440505;
   background: linear-gradient(97.54deg, black 20%, yellow 15%, blue 20%, #110003 25%, darkred 30%, rgb(2, 66, 15) 35%);
