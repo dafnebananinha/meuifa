@@ -1,26 +1,34 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reciclagem</title>
+body {
+    background-color: #dff5df;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px;
+}
 
-    <link rel="stylesheet" href="estilos.css">
-</head>
-<body>
+h1 {
+    color: green;
+}
 
-    <h1>🌱 Reciclagem</h1>
+p {
+    font-size: 18px;
+}
 
-    <p>
-        A reciclagem ajuda a proteger o meio ambiente, reduzindo a quantidade de lixo
-        e preservando os recursos naturais.
-    </p>
+button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
 
-    <button onclick="mostrarMensagem()">Clique aqui</button>
+button:hover {
+    background-color: darkgreen;
+}
 
-    <p id="mensagem"></p>
-
-    <script src="script.js"></script>
-
-</body>
-</html>
+#mensagem {
+    margin-top: 20px;
+    color: blue;
+    font-weight: bold;
+}
