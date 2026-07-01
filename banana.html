@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tarefas Moderno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>As Minhas Tarefas</h1>
+            <p class="subtitle">Organize o seu dia de forma eficiente</p>
+        </header>
+
+        <main>
+            <form id="todo-form">
+                <input type="text" id="todo-input" placeholder="O que precisa de fazer hoje?" required maxlength="60">
+                <button type="submit" id="add-btn">Adicionar</button>
+            </form>
+
+            <div class="stats-container">
+                <span id="items-left">0 tarefas pendentes</span>
+                <button id="clear-completed" class="btn-clear">Limpar Concluídas</button>
+            </div>
+
+            <ul id="todo-list">
+                </ul>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
