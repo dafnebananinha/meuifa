@@ -1,34 +1,98 @@
-body {
-    background-color: #dff5df;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 40px;
-}
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodapé.css");
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reciclagem</title>
 
-h1 {
-    color: green;
+:root {
+    --cor-de-fundo: #EBECEE;
+    --branco: #FFFFFF;
+    --vermelho: darkred;
+    --laranja: #8b0000;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins";
+    --azul: #002F52;
+    --fonte-secundario: "Josefin Sans";
+    --preto: #000000;
+    --cinza: #474646;
+    --cinza-claro: #858585;
 }
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
 
-p {
-    font-size: 18px;
-}
-
-button {
-    background-color: green;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 8px;
-    cursor: pointer;
+body, html {
+    background-color: white;
+    font-family: var(--fonte-principal);
     font-size: 16px;
+    font-weight: 400;
 }
+    <h1>🌱 Reciclagem</h1>
 
-button:hover {
-    background-color: darkgreen;
+.titulo-digitando {
+    font-family: monospace;
+    font-size: 5vw;
+    color: var(--vermelho); 
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: px solid;
+    width: 1;
+    animation: typing 6s steps(30, end) infinite, blink 1s infinite;
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
+    <p>
+        A reciclagem ajuda a proteger o meio ambiente, reduzindo a quantidade de lixo
+        e preservando os recursos naturais.
+    </p>
 
-#mensagem {
-    margin-top: 20px;
-    color: blue;
-    font-weight: bold;
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50%, 100% {
+        width: 100%; /* Expande o tamanho até preencher todo o texto */
+    }
 }
+    <button onclick="mostrarMensagem()">Clique aqui</button>
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+    <p id="mensagem"></p>
+
+.gradient-text {
+  font-family: Garamond;
+  font-size: 4vw;
+  text-align: center;
+  color: #440505;
+  background: linear-gradient(98.54deg, blue 25%, yellow 37%, lightgray 38%, green 65%, darkred 5%);
+  background-size: 400%; /* Aumenta o tamanho do fundo para animar */
+  -webkit-background-clip: text; /* Recorta o fundo no formato do texto */
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Torna a cor original transparente */
+  animation: degrade-animation 15s ease infinite; /* Animação */
+margin-bottom: 0%;
+margin-top: 0vw;
+margin-left: 15vw;
+margin-right: 1%;
+width: 100%;
+}
+    <script src="script.js"></script>
+
+@keyframes degrade-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+</body>
+</html>
